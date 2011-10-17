@@ -1,6 +1,6 @@
 /* Main */
 body {
-	background:url(../images/background.jpg);
+	background:url(../images/background.jpg) repeat;
 	color: #444;
 	margin:0px;
 	padding:0px;
