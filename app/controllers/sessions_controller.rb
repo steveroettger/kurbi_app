@@ -12,11 +12,11 @@ class SessionsController < ApplicationController
         @title = "Sign in"
         render 'new'
       else
-      	sign_in user
-      	redirect_back_or user
+        sign_in user
+        redirect_back_or user
       end
-    end
-    
+  end
+        
   def destroy
   	sign_out
   	redirect_to root_path
