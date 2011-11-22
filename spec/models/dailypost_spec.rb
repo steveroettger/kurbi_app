@@ -43,3 +43,18 @@ describe Dailypost do
  	end
  end
 end
+
+# == Schema Information
+#
+# Table name: dailyposts
+#
+#  id           :integer         not null, primary key
+#  general      :integer
+#  stress       :integer
+#  fatigue      :integer
+#  general_note :text
+#  user_id      :integer
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+

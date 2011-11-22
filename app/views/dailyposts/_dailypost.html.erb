@@ -1,0 +1,8 @@
+<tr>
+  <td class="dailypost">
+    <span class="content"><%= @dailyposts %></span>
+    <span class="timestamp">
+      Posted <%= time_ago_in_words(dailypost.created_at) %> ago.
+    </span>
+  </td>
+</tr>
