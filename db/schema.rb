@@ -10,11 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20111126155043) do
-=======
-ActiveRecord::Schema.define(:version => 20111112181252) do
->>>>>>> daily-post
 
   create_table "dailyposts", :force => true do |t|
     t.integer  "general"
@@ -27,7 +23,6 @@ ActiveRecord::Schema.define(:version => 20111112181252) do
   end
 
   add_index "dailyposts", ["user_id", "created_at"], :name => "index_dailyposts_on_user_id_and_created_at"
-<<<<<<< HEAD
 
   create_table "profiles", :force => true do |t|
     t.integer  "user_id"
@@ -37,8 +32,6 @@ ActiveRecord::Schema.define(:version => 20111112181252) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-=======
->>>>>>> daily-post
 
   create_table "users", :force => true do |t|
     t.string   "name"

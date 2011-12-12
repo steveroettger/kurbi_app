@@ -16,7 +16,7 @@ class DailypostsController < ApplicationController
 	    @dailypost.destroy
 	    redirect_to root_path, :flash => { :success => "Your post has been deleted." }
 	 end
-	
+	 	
 	  private
 	  
 	    def authorized_user
