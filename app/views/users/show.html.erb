@@ -3,12 +3,20 @@
     <td class="main">
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
+        <%= link_to @user.name, current_user %>
       </h1>
+      
+      <% unless @user.dailyposts.empty? %>
+       <table class="dailyposts" summary="User dailyposts">
+       	<%= render @dailyposts %>
+       </table>
+       <%= will_paginate @dailyposts %>
+      <% end %> 	
     </td>
     <td class="sidebar round">
-      <strong>Name</strong> <%= @user.name %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+      <strong>Name</strong> <%= link_to @user.name, current_user %><br />
+      <strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
+      <strong>Activity</strong> <%= @user.dailyposts.count %>
     </td>
   </tr>
 </table>

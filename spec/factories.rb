@@ -9,3 +9,11 @@ end
 Factory.sequence :email do |n|
 	"person-#{n}@example.com"
 end
+
+Factory.define :dailypost do |dailypost|
+	dailypost.general 0..5	
+	dailypost.stress 0..5
+	dailypost.fatigue 0..5
+	dailypost.general_note "general feeling"
+	dailypost.association :user
+end

@@ -128,7 +128,7 @@ end
   		get :show, :id => @user
   		response.should have_selector('td>a', :content => user_path(@user),
   											  :href => user_path(@user))
-  	end
+  	end  	
   end
   
   describe "GET 'new'" do
