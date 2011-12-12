@@ -63,8 +63,37 @@ describe DailypostsController do
 			end
 			
 			it "should have a flash message" do
-				post :create, :dailypost => @attr
-				flash[:success].should =~ /dailypost created/i
+			       post :create, :dailypost => @attr
+			       flash[:success].should =~ /thanks for updating Kurbi/i
+			end	 
+		end
+	end
+	
+	describe "DELETE 'destroy'" do
+		describe "for an unauthorized user" do
+			before(:each) do
+				@user = Factory(:user)
+				wrong_user = Factory(:user, :email => Factory.next(:email))
+		        test_sign_in(wrong_user)
+		        @dailypost = Factory(:dailypost, :user => @user)
+			end
+			
+			it "should deny access" do
+				delete :destroy, :id => @dailypost
+				response.should redirect_to(root_path)
+			end
+		end
+		
+		describe "for an authorized user" do
+			before(:each) do
+				@user = test_sign_in(Factory(:user))
+				@dailypost = Factory(:dailypost, :user => @user)
+			end
+			
+			it "should delete the dailypost" do
+				lambda do
+					delete :destroy, :id => @dailypost
+				end.should change(Dailypost, :count).by(-1)
 			end
 		end
 	end

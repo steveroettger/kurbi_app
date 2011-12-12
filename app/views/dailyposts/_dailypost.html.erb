@@ -5,4 +5,10 @@
       Posted <%= time_ago_in_words(dailypost.created_at) %> ago.
     </span>
   </td>
+  <% if current_user?(dailypost.user) %>
+  <td>
+  	<%= link_to "delete", dailypost, :method => :delete,
+								     :confirm => "Are you sure you want to delete?"%>
+  </td>
+  <% end %>
 </tr>
