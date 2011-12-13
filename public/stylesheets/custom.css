@@ -1,6 +1,7 @@
 /* Main */
 body {
 	background:url(../images/background.jpg) repeat;
+	font-family: Helvetica;
 	color: #444;
 	margin:0px;
 	padding:0px;
