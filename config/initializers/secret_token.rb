@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-KurbiApp::Application.config.secret_token = 'dbaa20ca96cf65c3d16a2164ac7663a0c7cfb67b57a220e84bdfc48929202e8f96a42f732dc457f76de2ae12a357c4231948b907c266ad306cb5940984f88c73'
+KurbiApp10::Application.config.secret_token = 'aa2ebf10c8ace4e38b23c832420f20602e47ba9f9b45aaf292c3181a7ec08f6a729efd6b1ba140aabc3e216c626415fa3ff89f672c20adb2879c5f5ed058c586'

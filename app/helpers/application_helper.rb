@@ -11,7 +11,7 @@ module ApplicationHelper
 	end	 
 	
 	def logo
-		image_tag("kurbi_logo.png", :alt => "Kurbi", :class => "round")
+		image_tag("kurbi-logo.png", :alt => "Kurbi", :class => "round")
 	end
 
 end

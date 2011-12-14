@@ -1,4 +1,4 @@
-KurbiApp::Application.routes.draw do
+KurbiApp10::Application.routes.draw do
   get "sessions/new"
 
   resources :users

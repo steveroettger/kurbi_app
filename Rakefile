@@ -1,7 +1,7 @@
+#!/usr/bin/env rake
 # Add your own tasks in files placed in lib/tasks ending in .rake,
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require File.expand_path('../config/application', __FILE__)
-require 'rake'
 
-KurbiApp::Application.load_tasks
+KurbiApp10::Application.load_tasks
