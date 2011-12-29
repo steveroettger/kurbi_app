@@ -8,19 +8,20 @@
 	<%= javascript_include_tag "application" %>
 </head>
 
-	<body>
-		<div class="container">
-			<%= render 'layouts/header' %>
+<body>		
+	<div id="container">
+		<%= render 'layouts/header' %>
 			
-			<section class="round">
-			        <% flash.each do |key, value| %>
-			          <div class="flash <%= key %>"><%= value %></div>
-			        <% end %>
-			        <%= yield %>
-			</section>			
+		<div id="inner-container">
+			<section class="shadow">
+			    <% flash.each do |key, value| %>
+			    <div class="flash <%= key %>"><%= value %></div>
+			    <% end %>
+			    <%= yield %>
+			</section>
+		</div><!--#inner-container-->				
 			<%= render 'layouts/footer' %>
 			<%= debug(params) if Rails.env.development? %>
-			
-		</div>
+	</div><!--#container-->
 </body>
 </html>

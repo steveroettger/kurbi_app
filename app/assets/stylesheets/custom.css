@@ -1,0 +1,384 @@
+/*---------------------MAIN---------------*/
+html {
+	overflow: auto;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	background: url(../images/background.jpg) repeat;
+	font-family: Museo;
+	color: #444;
+	overflow-x: hidden;
+}
+
+/*------------------TYPE-------------------*/
+h1 {
+	font-size: 32px;
+	color: #253E57;
+}
+
+h2 {
+	font-size:28px;
+	color: #253E57;
+	text-decoration: underline;
+}
+
+h3 {
+	color:  #333;
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+p {
+	color: #444;	
+}
+
+/*-----------------HEADER------------------*/
+header {
+	width: 100%;
+	background: url(../images/bkgd-header.gif) repeat;	
+}
+
+header img {
+	margin:7px 0 0 50px;
+	border: none;
+}
+
+header nav {
+	background: transparent;
+}
+
+/*-----------------STRUCTURE/PAGES--------------*/
+#container {
+	width:  100%;
+}
+
+#inner-container {
+	margin: 0 auto;
+	width: 85%;
+	height: auto;
+}
+
+#inner-container section {
+	margin-top: 2em;
+	font-size: 14px;
+	padding: 20px;
+	border: 2px solid #ccc;
+	background: #E0E0E0;
+}
+
+/*About Page*/
+.team_info {
+	margin-top: 2em;
+	font-size: 14px;
+	padding: 20px;
+	border: 2px solid #ccc;
+	background: #E0E0E0;
+}
+
+.team_info img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:3px solid #5694C1;
+}
+
+.team_info p {
+	margin:-15px 0 40px 10px;
+	width: 50%;
+	font-size: 14px;
+	font-style: italic;
+}
+
+/*Home Page*/
+#home {
+	margin:0 0 150px 0;
+	width: 100%;
+	height: auto;
+}
+
+#home-image {
+	float: left;
+	margin:0 0 0 0;
+}
+
+#home h1 {
+	float: left;
+	margin:0 0 0 30px;
+	font-size: 42px;
+}
+
+#home p {
+	float: left;
+	margin:20px 0 0 30px;
+	width: 48%;
+	font-size: 17px;
+	color: #333;
+	line-height:20px;	
+}
+
+#home-copy a, #home-copy a:link {
+	color: #fff;	
+	text-align: center;
+	text-decoration: none;
+}
+
+#home-copy a:hover {
+	text-decoration: underline;
+}
+
+.signup_button {
+	position: relative;
+	top: 40px;
+	left: 60px;
+  	padding:20px 40px 20px 40px;
+  	font-size: 17px;
+  	background: url(../images/bkgd-header.gif) repeat;
+  	border: none;
+}
+
+.signup_button:hover {
+	background: url(../images/bkgd-footer.gif) repeat;
+}
+
+.home_signin {
+	position:  relative;
+	top: 10px;
+	left: 185px;
+}
+
+/*------------------FOOTER------------------*/
+footer {
+  margin:50px 0 0 0;
+  width:100%;
+  height: 40px;
+  border-top:2px solid #ccc;
+  padding:8px 16px;
+  background: #E0E0E0;
+}
+
+footer section {
+	background: transparent;
+	display: inline;
+}
+
+footer nav {
+	background: transparent;
+}
+
+#footer-nav {
+  float: right;
+  margin:16px 20px 0 0;
+  font-size: 13px;
+}
+
+#sm-icons {
+	float: left;
+	margin:6px 0 0 -15px;
+}
+
+/*------------------LINKS-------------------*/
+a {
+	color: #09c;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #069;
+}
+
+a:visited {
+	color:#069;
+}
+
+/*--------------------NAV-------------------*/
+nav {
+	float: right;
+	background: #fff;
+	padding: 0 0.7em;
+	white-space:nowrap;
+	font-size: 14px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display:inline-block;
+	padding:  0.2em 0;
+}
+
+nav ul li a {
+	padding: 0 5px;
+	color:#2EB568;
+} 
+
+nav ul li a:visited {
+	color:#2EB568;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+/*------------------------------MISC ELEMENTS-----------------------------*/
+
+/*ROUND CORNERS*/
+.round {
+	-moz-border-radius:    10px;
+	-webkit-border-radius: 10px;
+	border-radius:         10px;
+}
+
+/*SHADOW EFFECT*/
+.shadow {
+	position:relative;
+	-moz-box-shadow:0 0 10px 0 #000;
+	-webkit-box-shadow:0 0 10px 0 #000;
+	box-shadow:0 0 10px 0 #000;
+	z-index:9999;	
+}
+
+/*-----------------USER SHOW PAGE-------------*/
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #2EB568;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+  
+}
+
+/*------------------SIGN UP PAGE-------------------*/
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/*-------------------ERROR MESSAGES-----------------*/
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/*-----------------SHOW USERS PAGE-----------------*/
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
+
+/*------------------SHOW DAILYPOSTS----------------*/
+h1.dailypost {
+  margin-bottom: 0.3em;
+}
+
+table.dailyposts {
+  margin-top: 1em;
+}
+
+table.dailyposts tr {
+  height: 100px;
+}
+
+table.dailyposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.dailyposts tr td.dailypost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.dailyposts tr td.dailypost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.dailyposts {
+  font-size: 80%;
+}
+
+form.new_dailypost {
+  margin-bottom: 2em;
+}
+
+form.new_dailypost textarea {
+  height: 100px;
+  margin-bottom: 0;
+}

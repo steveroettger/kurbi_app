@@ -1,10 +1,30 @@
 <footer>
-	<nav class="round">
-		<ul>
-			<li><%= link_to "about us", about_path %></li>
-			<li><%= link_to "what's new", '#' %></li>
-			<li><%= link_to "faq's", '#' %></li>
-			<li><%= link_to "contact", contact_path %></li>	
-		</ul>
-	</nav>
+	<section>
+		<div id="sm-icons">
+		<nav>
+			<ul>
+				<li>
+				<%= link_to twitter, 'http://twitter.com/gokurbi', :target => '_blank' %>
+				</li>
+				<li>
+				<%= link_to tumblr, 'http://gokurbi.tumblr.com/', :target => '_blank' %>
+				</li>
+				<li>
+				<%= link_to facebook, 'https://www.facebook.com/pages/Kurbi/248340778541148', :target => '_blank' %>
+				</li>
+			</ul>
+		</nav>
+		</div><!--#sm-icons-->
+		
+		<div id="footer-nav">
+		<nav>
+			<ul>
+				<li><%= link_to "about us", about_path %></li>
+				<li><%= link_to "what's new", '#' %></li>
+				<li><%= link_to "faq's", '#' %></li>
+				<li><%= link_to "contact", contact_path %></li>	
+			</ul>
+		</nav>
+		</div><!--#footer-nav-->
+    </section>	
 </footer>
