@@ -56,7 +56,7 @@ header nav {
 
 #inner-container {
 	margin: 0 auto;
-	width: 85%;
+	width: 1024px;
 	height: auto;
 }
 
@@ -66,29 +66,6 @@ header nav {
 	padding: 20px;
 	border: 2px solid #ccc;
 	background: #E0E0E0;
-}
-
-/*About Page*/
-.team_info {
-	margin-top: 2em;
-	font-size: 14px;
-	padding: 20px;
-	border: 2px solid #ccc;
-	background: #E0E0E0;
-}
-
-.team_info img {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border:3px solid #5694C1;
-}
-
-.team_info p {
-	margin:-15px 0 40px 10px;
-	width: 50%;
-	font-size: 14px;
-	font-style: italic;
 }
 
 /*Home Page*/
@@ -148,6 +125,29 @@ header nav {
 	left: 185px;
 }
 
+/*About Page*/
+.team_info {
+	margin-top: 2em;
+	font-size: 14px;
+	padding: 20px;
+	border: 2px solid #ccc;
+	background: #E0E0E0;
+}
+
+.team_info img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:3px solid #5694C1;
+}
+
+.team_info p {
+	margin:-15px 0 40px 10px;
+	width: 50%;
+	font-size: 14px;
+	font-style: italic;
+}
+
 /*------------------FOOTER------------------*/
 footer {
   margin:50px 0 0 0;
@@ -180,17 +180,17 @@ footer nav {
 
 /*------------------LINKS-------------------*/
 a {
-	color: #09c;
+	color: #253E57;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #069;
+	color: #253E57;
 }
 
 a:visited {
-	color:#069;
+	color: #253E57;
 }
 
 /*--------------------NAV-------------------*/
@@ -226,13 +226,122 @@ nav ul li a:hover {
 	text-decoration: underline;
 }
 
+/*------------------------------FORM STYLES---------------------------*/
+form {
+	font-family: Museo;
+	color: #333;
+}
+
+form ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+form label {
+	font-weight: lighter;
+}
+
+input.text, input.search, input.file, textarea.textarea, select.select {
+	font-family: Museo;
+	font-size:14px;
+	font-style: italic;
+	color:#333;
+	border: 2px solid #ccc;		
+}
+
+form input.btTxt {
+	padding:10px 20px 10px 20px;
+  	font-size: 14px;
+  	color: #fff;
+  	background: url(../images/bkgd-header.gif) repeat;
+  	border: none;
+}
+
+form input.btTxt:hover {
+	background: url(../images/bkgd-footer.gif) repeat;
+	text-decoration: underline;
+}
+
+/*------SIMPLE FORM STYLES-------*/
+
+.field input {
+	width: 200px;
+	height: 25px;
+	padding-left: 5px;
+	font-family: Museo;
+	font-size: 14px;
+	color: #333;
+	border:  2px solid #ccc;
+}
+ 
+.actions .button {
+	padding:10px 20px 10px 20px;
+	font-family: Museo;
+	font-size: 14px;
+	color: #fff;		
+	background: url(../images/bkgd-header.gif) repeat;
+	border: none;
+}
+
+.actions .button:hover {
+	background: url(../images/bkgd-footer.gif) repeat;
+	text-decoration: underline;
+}
+
+/*---------SIGN UP PAGE---------*/
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/*---------ERROR MESSAGES------*/
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid #ccc;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background: url(../images/bkgd-header.gif) repeat;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+}
+
+
 /*------------------------------MISC ELEMENTS-----------------------------*/
 
 /*ROUND CORNERS*/
 .round {
-	-moz-border-radius:    10px;
-	-webkit-border-radius: 10px;
-	border-radius:         10px;
+	-moz-border-radius:    5px;
+	-webkit-border-radius: 5px;
+	border-radius:         5px;
 }
 
 /*SHADOW EFFECT*/
@@ -255,69 +364,6 @@ td.main {
   padding: 1em;
 }
 
-td.sidebar {
-  width: 30%;
-  padding: 1em;
-  vertical-align: top;
-  background: #2EB568;
-}
-
-.profile img.gravatar {
-  border: 1px solid #999;
-  margin-bottom: -15px;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-  
-}
-
-/*------------------SIGN UP PAGE-------------------*/
-div.field, div.actions {
-  margin-bottom: 10px;
-}
-
-/*-------------------ERROR MESSAGES-----------------*/
-.field_with_errors {
-  margin-top: 10px;
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
-.field_with_errors label {
-  color: #fff;
-}
-
-#error_explanation {
-  width: 400px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#error_explanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #c00;
-  color: #fff;
-}
-
-#error_explanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 5px;
-}
-
-#error_explanation ul li {
-  font-size: 12px;
-  list-style: square;
-}
-
 /*-----------------SHOW USERS PAGE-----------------*/
 ul.users {
   margin-top: 1em;
@@ -332,53 +378,41 @@ h1.dailypost {
   margin-bottom: 0.3em;
 }
 
-table.dailyposts {
-  margin-top: 1em;
-}
-
-table.dailyposts tr {
-  height: 100px;
-}
-
-table.dailyposts tr td.gravatar {
-  border-top: 1px solid #ccc;
+td.sidebar {
+  width: 30%;
+  padding: 1em;
   vertical-align: top;
-  width: 50px;
+  color: #fff;
+  background: url(../images/bkgd-footer.gif) repeat;
 }
 
-table.dailyposts tr td.dailypost {
-  border-top: 1px solid #ccc;
-  vertical-align: top;
-  padding-top: 10px;
-}
-
-table.dailyposts tr td.dailypost span.timestamp {
-  display: block;
-  font-size: 85%;
-  color: #666;
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+  
 }
 
 div.user_info img {
-  padding-right: 0.1em;
+  border: 1px solid #999;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
 }
 
 div.user_info a {
+  color: #fff;
   text-decoration: none;
 }
 
+div.user_info a:hover {
+	text-decoration: underline;
+}
+
 div.user_info span.user_name {
-  position: absolute;
+ padding:-20px 0 0 10px;
 }
 
-div.user_info span.dailyposts {
-  font-size: 80%;
-}
 
-form.new_dailypost {
-  margin-bottom: 2em;
-}
-
-form.new_dailypost textarea {
-  height: 100px;
-  margin-bottom: 0;
-}

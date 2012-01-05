@@ -1,26 +1,28 @@
-<h1>Edit user</h1>
+<!--This is the settings page, where a user can edit their name, email and password  -->
+
+<h2>Edit user</h2>
 
 <%= form_for(@user) do |f| %>
   <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
-  </div>
+  </div><!--.field-->
   <div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
-  </div>
+  </div><!--.field-->
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password %>
-  </div>
+  </div><!--.field-->
   <div class="field">
     <%= f.label :password_confirmation, "Confirmation" %><br />
     <%= f.password_field :password_confirmation %>
-  </div>
+  </div><!--.field-->
   <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
+    <%= f.submit "Update", :class => "button round" %>
+  </div><!--.actions-->
 <% end %>
 
 <div>

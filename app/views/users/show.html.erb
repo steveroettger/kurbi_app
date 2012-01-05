@@ -1,3 +1,5 @@
+<!--This is the show page for a user's profile, only consisting of name & picture right now-->
+
 <table class="profile" summary="Profile information">
   <tr>
     <td class="main">
@@ -5,11 +7,6 @@
         <%= gravatar_for @user %>
         <%= link_to @user.name, current_user %>
       </h1>
-  
-    </td>
-    <td class="sidebar round">
-      <strong>Name</strong> <%= link_to @user.name, current_user %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
     </td>
   </tr>
 </table>

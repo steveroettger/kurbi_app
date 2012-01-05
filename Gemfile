@@ -7,7 +7,7 @@ gem 'rails', '3.1.3'
 
 gem "heroku", "~> 2.16.2"
 gem 'gravatar_image_tag', '0.1.0'
-gem 'will_paginate', '3.0.pre2'
+gem "will_paginate", "~> 3.0.2"
 gem 'simple_form', '1.5.2'
 gem "pg", "~> 0.12.0"
 
@@ -25,7 +25,7 @@ gem 'jquery-rails'
 group :development do
 	gem 'sqlite3', '1.3.5'
 	gem 'rspec-rails', '2.6.1'
-	gem 'annotate', '2.4.0'
+	gem 'annotate'
 	gem 'faker', '1.0.1'
 end
 

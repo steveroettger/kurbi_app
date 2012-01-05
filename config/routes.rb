@@ -1,9 +1,11 @@
 KurbiApp10::Application.routes.draw do
+  resources :profiles
+
   get "sessions/new"
 
   resources :users
   resources :sessions,   :only => [:new, :create, :destroy]
-  resources :dailyposts, :only => [:create, :destroy]
+  resources :profiles
 
   root :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
