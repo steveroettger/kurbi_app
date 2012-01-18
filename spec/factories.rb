@@ -10,10 +10,16 @@ Factory.sequence :email do |n|
 	"person-#{n}@example.com"
 end
 
-Factory.define :dailypost do |dailypost|
-	dailypost.general 0..5	
-	dailypost.stress 0..5
-	dailypost.fatigue 0..5
-	dailypost.general_note "general feeling"
-	dailypost.association :user
+Factory.define :profile do |profile|
+	profile.location "example location"	
+	profile.bio "bio of the user"
+	profile.birthday "00/00/0000"
+	profile.diagnosed "0000"
+	profile.medications "medications user is taking"
+	profile.doctor "doctor"
+	profile.sex "male"
+	profile.race "caucasian"
+	profile.association :user
 end
+
+

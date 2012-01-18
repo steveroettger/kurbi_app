@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                 :integer         not null, primary key
+#  name               :string(255)
+#  email              :string(255)
+#  created_at         :datetime
+#  updated_at         :datetime
+#  encrypted_password :string(255)
+#  salt               :string(255)
+#  admin              :boolean         default(FALSE)
+#
+
 require 'spec_helper'
 
 describe User do
@@ -64,11 +78,7 @@ describe User do
   	it "should have a password attribute" do
   		User.new(@attr).should respond_to(:password)
   	end
-  	
-  	#it "should have a password confirmation attribute" do
-  	#	@user.should respond_to(:password_confirmation)
-  	#end
-  end
+   end
   
   describe "password validations" do	
   	it "should require a password" do
@@ -113,7 +123,7 @@ describe User do
   	
   	describe "has_password? method" do
   		it "should exist" do
-  		@user.should respond_to(:has_password?)
+  			@user.should respond_to(:has_password?)
   		end
   		
   		it "should return true if the passwords match" do
@@ -161,23 +171,29 @@ describe User do
   	      @user.toggle!(:admin)
   	      @user.should be_admin
   	    end
-  	  end
-  end
+  	end
+  	
+  	describe "profile associations" do
+  		before(:each) do
+  			@user = User.create(@attr)
+  		end
+  		
+  		it "should have a profile attribute" do
+  			@user.should respond_to(:profile)
+  		end
+  		  		
+  		it "should destroy associated profile" do
+  		      @user.destroy
+  		      [@profile].each do |profile|
+  		        lambda do
+  		          Profile.find(profile)
+  		        end.should raise_error(ActiveRecord::RecordNotFound)
+  		      end
+  		end
+  	end
+end
 
 
 
 
-# == Schema Information
-#
-# Table name: users
-#
-#  id                 :integer         not null, primary key
-#  name               :string(255)
-#  email              :string(255)
-#  created_at         :datetime
-#  updated_at         :datetime
-#  encrypted_password :string(255)
-#  salt               :string(255)
-#  admin              :boolean         default(FALSE)
-#
 

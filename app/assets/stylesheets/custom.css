@@ -148,6 +148,37 @@ header nav {
 	font-style: italic;
 }
 
+/*User Profile Page*/
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+.profile-edit a {
+	float: right;
+	margin:-28px 0 0 0;
+	padding:10px 20px 10px 20px;
+	color:  #fff;
+	background: url(../images/bkgd-header.gif) repeat;
+	border: none;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.profile-edit a:hover {
+	background: url(../images/bkgd-footer.gif) repeat;	
+}
+	
+
 /*------------------FOOTER------------------*/
 footer {
   margin:50px 0 0 0;
@@ -176,21 +207,6 @@ footer nav {
 #sm-icons {
 	float: left;
 	margin:6px 0 0 -15px;
-}
-
-/*------------------LINKS-------------------*/
-a {
-	color: #253E57;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-	color: #253E57;
-}
-
-a:visited {
-	color: #253E57;
 }
 
 /*--------------------NAV-------------------*/
@@ -263,15 +279,17 @@ form input.btTxt:hover {
 	text-decoration: underline;
 }
 
-/*------SIMPLE FORM STYLES-------*/
+/*------FORM FOR STYLES-------*/
+.field {
+	font-family: Museo;
+	font-size: 14px;
+	color: #333;
+} 
 
 .field input {
 	width: 200px;
 	height: 25px;
-	padding-left: 5px;
-	font-family: Museo;
-	font-size: 14px;
-	color: #333;
+	padding-left: 5px;	
 	border:  2px solid #ccc;
 }
  
@@ -353,66 +371,6 @@ div.field, div.actions {
 	z-index:9999;	
 }
 
-/*-----------------USER SHOW PAGE-------------*/
-table.profile {
-  width: 100%;
-  margin-bottom: 0;
-}
 
-td.main {
-  width: 70%;
-  padding: 1em;
-}
-
-/*-----------------SHOW USERS PAGE-----------------*/
-ul.users {
-  margin-top: 1em;
-}
-
-.users li {
-  list-style: none;
-}
-
-/*------------------SHOW DAILYPOSTS----------------*/
-h1.dailypost {
-  margin-bottom: 0.3em;
-}
-
-td.sidebar {
-  width: 30%;
-  padding: 1em;
-  vertical-align: top;
-  color: #fff;
-  background: url(../images/bkgd-footer.gif) repeat;
-}
-
-.profile img.gravatar {
-  border: 1px solid #999;
-  margin-bottom: -15px;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-  
-}
-
-div.user_info img {
-  border: 1px solid #999;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-}
-
-div.user_info a {
-  color: #fff;
-  text-decoration: none;
-}
-
-div.user_info a:hover {
-	text-decoration: underline;
-}
-
-div.user_info span.user_name {
- padding:-20px 0 0 10px;
-}
 
 

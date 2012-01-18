@@ -7,6 +7,50 @@
         <%= gravatar_for @user %>
         <%= link_to @user.name, current_user %>
       </h1>
+      <div class="profile-edit">
+      	<%= link_to 'Edit Profile', edit_profile_path(@profile) %>
+      </div><!--.profile-edit-->
+    <section>
+        <p>
+          <b>Location:</b>
+          <%= @profile.location %>
+        </p>
+        
+        <p>
+          <b>Bio:</b>
+          <%= @profile.bio %>
+        </p>
+        
+        <p>
+          <b>Birthday:</b>
+          <%= @profile.birthday %>
+        </p>
+        
+        <p>
+          <b>Race:</b>
+          <%= @profile.race %>
+        </p>
+        
+        <p>
+          <b>Sex:</b>
+          <%= @profile.sex %>
+        </p>
+        
+        <p>
+          <b>Year Diagnosed:</b>
+          <%= @profile.diagnosed %>
+        </p>
+        
+        <p>
+          <b>Primary Neurologist:</b>
+          <%= @profile.doctor %>
+        </p>
+        
+        <p>
+          <b>Medications:</b>
+          <%= @profile.medications %>
+        </p>    
+   </section>
     </td>
   </tr>
 </table>
