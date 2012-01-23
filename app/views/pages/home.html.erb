@@ -1,7 +1,15 @@
 <!--
 This is the home page of the application where users will arrive once the application is launched
 -->
-
+<% if signed_in? %>
+<section>
+<div id="home">
+	<div id="kurbi_survey">	
+		<script src="http://www.surveymonkey.com/jsEmbed.aspx?sm=7PZt0OeYdJS2QPlW0WdocA_3d_3d"></script>
+	</div><!--#kurbi_survey-->
+</div><!--#home-->
+</section>
+<% else %>
 <div id="home">
 	<div id="home-image">
 		<%= link_to home_image %>
@@ -16,4 +24,4 @@ This is the home page of the application where users will arrive once the applic
 		<p>Already a user? <%= link_to "Sign in now.", signin_path %></p>
 		</div><!--.home_signin-->
 </div><!--#home-->
-
+<% end %>

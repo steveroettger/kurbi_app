@@ -10,6 +10,7 @@ gem 'gravatar_image_tag', '0.1.0'
 gem "will_paginate", "~> 3.0.2"
 gem 'simple_form', '1.5.2'
 gem "pg", "~> 0.12.0"
+gem "friendly_id", "~> 4.0.0"
 
 
 # Gems used only for assets and not required

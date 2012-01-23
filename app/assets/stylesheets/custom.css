@@ -125,6 +125,15 @@ header nav {
 	left: 185px;
 }
 
+/*Home Page w/ SurveyMonkeySurvey*/
+#home #kurbi_survey {
+	margin:30px 0 0 0;
+	text-align: center;
+	width: auto;
+	height:  auto;
+	
+}
+
 /*About Page*/
 .team_info {
 	margin-top: 2em;

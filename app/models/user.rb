@@ -18,7 +18,13 @@ class User < ActiveRecord::Base
   
   has_one :profile, :dependent => :destroy
   before_create :build_default_profile
-      
+  
+  extend FriendlyId
+  friendly_id :name, use: [:slugged, :history]
+  
+  # def should_generate_new_friendly_id?
+  #	 new_record?
+  # end
   
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 

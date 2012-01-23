@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 	before_filter :authenticate, :only => [:index, :show, :edit, :update, :destroy]
 	before_filter :correct_user, :only => [:edit, :update]
-	before_filter :admin_user,   :only => :destroy
+	before_filter :admin_user,   :only => [:destroy]
 
   def show
     @user = User.find(params[:id])
@@ -18,7 +18,9 @@ class UsersController < ApplicationController
       @user = User.new(params[:user])
       if @user.save
         sign_in @user
-        flash[:success] = "Welcome to Kurbi! Please click 'edit' to enter your profile information."
+        flash[:success] = "Welcome to Kurbi! 
+        				  Please click 'Edit Profile' to enter your profile information OR
+        				  click 'Home' to submit your daily log now."
         redirect_to @user
       else
         @title = "Sign up"
