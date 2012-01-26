@@ -22,6 +22,7 @@ class UsersController < ApplicationController
         				  Please click 'Edit Profile' to enter your profile information OR
         				  click 'Home' to submit your daily log now."
         redirect_to @user
+        UserMailer.registration_confirmation(@user).deliver
       else
         @title = "Sign up"
         render 'new'

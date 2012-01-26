@@ -2,26 +2,30 @@
 This is the home page of the application where users will arrive once the application is launched
 -->
 <% if signed_in? %>
-<section>
-<div id="home">
-	<div id="kurbi_survey">	
-		<script src="http://www.surveymonkey.com/jsEmbed.aspx?sm=7PZt0OeYdJS2QPlW0WdocA_3d_3d"></script>
-	</div><!--#kurbi_survey-->
-</div><!--#home-->
-</section>
+	<div id="home_profile_header">
+  		<%= gravatar_for current_user, :size => 60 %>
+  		<%= link_to current_user.name, current_user %>
+	</div><!--#home_profile_header-->
+
+	<div id="home">
+		<div id="kurbi_survey">	
+			<script src="http://www.surveymonkey.com/jsEmbed.aspx?sm=7PZt0OeYdJS2QPlW0WdocA_3d_3d"></script>
+		</div><!--#kurbi_survey-->
+	</div><!--#home-->
 <% else %>
-<div id="home">
-	<div id="home-image">
-		<%= link_to home_image %>
-	</div><!--#home-image-->
+	<div id="home">
+		<div id="home-image">
+			<%= link_to home_image %>
+		</div><!--#home-image-->
 	
-	<div id="home-copy">	
-		<h1>Track, Manage &amp;<br/>Understand Your Health</h1>
-		<p>Kurbi is a breakthrough web application that helps people living with MS to more easily communicate the daily challenges of their symptoms to care-providers in-between scheduled visits.</p>
-		<%= link_to "Sign up!", signup_path, :class => "signup_button round" %>
-	</div>
+		<div id="home-copy">	
+			<h1>Track, Manage &amp;<br/>Understand Your Health</h1>
+			<p>Kurbi is a breakthrough web application that helps people living with MS to more easily communicate the daily challenges of their symptoms to care-providers in-between scheduled visits.</p>
+			<%= link_to "Sign up!", signup_path, :class => "signup_button round" %>
+		</div><!--#home-copy-->
+		
 		<div class="home_signin">
-		<p>Already a user? <%= link_to "Sign in now.", signin_path %></p>
+			<p>Already a user? <%= link_to "Sign in now.", signin_path %></p>
 		</div><!--.home_signin-->
-</div><!--#home-->
+	</div><!--#home-->
 <% end %>

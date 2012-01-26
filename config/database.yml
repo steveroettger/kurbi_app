@@ -21,4 +21,4 @@ production:
   database: kurbi_development
   pool: 5
   username: root
-  password:
+  password: password

@@ -9,9 +9,9 @@ KurbiApp10::Application.routes.draw do
 
   root :to => 'pages#home'
   match '/contact', :to => 'pages#contact'
-  match '/about', :to => 'pages#about'
-  match '/signup', :to => 'users#new'
-  match '/signin', :to => 'sessions#new'
+  match '/about',   :to => 'pages#about'
+  match '/signup',  :to => 'users#new'
+  match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
    
   # The priority is based upon order of creation:

@@ -12,6 +12,10 @@ body {
 	overflow-x: hidden;
 }
 
+#history-image {
+	text-align: center;
+}
+
 /*------------------TYPE-------------------*/
 h1 {
 	font-size: 32px;
@@ -34,6 +38,14 @@ p {
 	color: #444;	
 }
 
+/*------------------LINKS-------------------*/
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
 /*-----------------HEADER------------------*/
 header {
 	width: 100%;
@@ -134,6 +146,16 @@ header nav {
 	
 }
 
+#home_profile_header {
+	float: right;
+}
+
+#home_profile_header a:link {
+	position: relative;
+	top:-10px;
+	font-size: 16px;
+}
+
 /*About Page*/
 .team_info {
 	margin-top: 2em;
@@ -186,7 +208,6 @@ td.main {
 .profile-edit a:hover {
 	background: url(../images/bkgd-footer.gif) repeat;	
 }
-	
 
 /*------------------FOOTER------------------*/
 footer {

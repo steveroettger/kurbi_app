@@ -1,0 +1,9 @@
+<div id="email_registration">
+	<p>Welcome to Kurbi <%= @user.name %>!</p>
+	===============================================
+ 
+	<p>To edit your profile or to complete your first daily log, just follow this link: 
+		<%= link_to "My Kurbi Profile", user_url(@user) %>.</p>
+ 
+	<p>Thanks for joining and remember to fill out your daily log each day!</p>
+</div><!--#email_registration-->

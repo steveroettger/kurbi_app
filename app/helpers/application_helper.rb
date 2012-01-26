@@ -45,5 +45,4 @@ module ApplicationHelper
 	def facebook 
 		image_tag("facebook.gif", :alt => "Kurbi Mobile Health Facebook Profile")
 	end
-
 end
